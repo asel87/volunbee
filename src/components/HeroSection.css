@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.hero-container {
+  max-width: 700px;
+  padding: 40px 16px;
+  background: #F9F7FF;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+
+  /* new line: shift content ~2cm right */
+  margin-left: 2cm;
+}
+
+
+.hero-title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  color: #2D1B69;
+  margin-bottom: 24px;
+}
+
+.hero-description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #666666;
+  margin-bottom: 32px;
+  max-width: 591px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #6B4DE6;
+  color: white;
+  border: none;
+}
+
+.btn.primary:hover {
+  background-color: #5840b0;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #6B4DE6;
+  color: #6B4DE6;
+}
+
+.btn.outline:hover {
+  background-color: #6B4DE6;
+  color: white;
+}
+.hero-stats {
+  display: flex;
+  justify-content: flex-start;
+  gap: 60px;
+  margin-top: 40px;
+  padding: 0 16px; /* match hero-container padding */
+  box-sizing: border-box;
+}
+
+
+.stat-box {
+  text-align: left;
+}
+
+
+.stat-value {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #2D1B69;
+  margin: 0;
+}
+
+.stat-label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2D1B69;
+  margin: 4px 0 0 0;
+}
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 2cm;
+  gap: 40px;
+}
+
+.hero-image {
+  width: 80%;         /* or a specific width like 900px */
+  max-width: 25000px;    /* Adjust this depending on your layout */
+  height: auto;
+  display: block;
+  margin: 0 auto;      /* Center it */
+}

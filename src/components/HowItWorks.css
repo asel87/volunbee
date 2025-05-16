@@ -1,0 +1,95 @@
+.how-it-works {
+  background: #F9F7FF;
+  padding: 3rem 2rem;
+  max-width: 1272px;
+  margin: 2rem auto 0 auto; /* центрирует блок и отступ сверху */
+  border-radius: 0; /* как в твоём дизайне */
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.how-it-works__title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #2D1B69;
+  margin-bottom: 2rem;
+}
+
+.how-it-works__steps {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center; /* было space-between, стало center */
+}
+
+
+.how-it-works__step-card {
+  background: #fff;
+  border-radius: 12px;
+  width: 284px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.how-it-works__step-number {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: #FFD700;
+  border-radius: 8px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2D1B69;
+  font-weight: 400;
+  top: 1.5rem;
+  left: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-it-works__step-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2D1B69;
+  margin-left: 64px; /* чтобы текст не наезжал на номер */
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.how-it-works__step-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  margin-left: 64px; /* выравнивание с заголовком */
+  margin-top: 0;
+}
+
+/* Адаптивность можно добавить по необходимости */
+@media (max-width: 1024px) {
+  .how-it-works__steps {
+    justify-content: center;
+  }
+}
+
+.how-it-works__step-card {
+  background: #fff;
+  border-radius: 12px;
+  width: 284px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.how-it-works__step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}

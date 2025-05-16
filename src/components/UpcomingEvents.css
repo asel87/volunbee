@@ -1,0 +1,131 @@
+.upcoming-events {
+  padding: 2rem 1rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  margin-left: 6%;
+}
+
+.upcoming-events__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #2D1B69;
+  margin-bottom: 2rem;
+}
+
+/* ✅ ОБЕРТКА ДЛЯ ЦЕНТРИРОВКИ РЯДА */
+.upcoming-events__list {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* если экран меньше — будет перенос */
+}
+
+/* КАРТОЧКА СОБЫТИЯ */
+.event-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* КАРТИНКА */
+.event-card__image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Заголовок + GPA */
+.event-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.event-card__title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2D1B69;
+  width: 292px;        /* фиксированная ширина, если нужно */
+  margin: 0 0 8px 0;   /* снизу отступ, чтобы отделить от следующего текста */
+  text-align: left;
+  /* height: убери, чтобы высота была динамической */
+}
+
+
+/* GPA метка */
+.event-card__gpa {
+  background-color: #FFD700;
+  color: #2D1B69;
+  font-size: 14px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 7px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Дата и место */
+.event-card__datetime,
+.event-card__location {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0.25rem 0;
+}
+
+/* Теги */
+.event-card__tags {
+  margin-top: 0.5rem;
+}
+
+.event-card__tag {
+  display: inline-block;
+  background-color: #f9f7ff;
+  color: #6B4DE6;
+  font-size: 14px;
+  padding: 0.3rem 0.6rem;
+  margin-right: 0.5rem;
+  border-radius: 7px;
+  margin-top: 0.25rem;
+}
+
+/* Перки */
+.event-card__perks {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Кнопка */
+.event-card__button {
+  background-color: #6B4DE6;
+  color: #fff;
+  border: none;
+  padding: 0; /* удалим внутренние отступы, будет фикс. размер */
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  transition: background-color 0.2s;
+  margin-top: auto;
+}
+
+.event-card__button:hover {
+  background-color: #563bc9;
+}

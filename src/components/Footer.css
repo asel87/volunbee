@@ -1,0 +1,146 @@
+.footer-container {
+  background: #F9F7FF;
+  padding: 40px 60px;
+  font-family: 'Poppins', sans-serif;
+  color: #666666;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer-empowering {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  max-width: 300px;
+  color: #666666;
+  flex-shrink: 0;
+  width: 300px;
+}
+
+.footer-section-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 160px;
+  flex-shrink: 0;
+}
+
+.footer-section-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #2D1B69;
+  margin: 0;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #666666;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.footer-links-list li {
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-links-list li:hover {
+  color: #6B4DE6;
+}
+
+.newsletter-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+  margin: 0 0 10px 0;
+  max-width: 300px;
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 320px;
+}
+
+.newsletter-input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+
+.newsletter-input:focus {
+  border-color: #6B4DE6;
+}
+
+.newsletter-button {
+  background-color: #6B4DE6;
+  border: none;
+  color: white;
+  font-size: 14px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-button:hover {
+  background-color: #5638c9;
+}
+
+/* 👇 Footer Bottom Section */
+.footer-bottom {
+  border-top: 1px solid #E5E7EB;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #666666;
+  flex-wrap: wrap;
+}
+
+.footer-legal-links span {
+  margin-left: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-legal-links span:hover {
+  color: #6B4DE6;
+}
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+}
+
+.social-icons svg {
+  width: 24px;
+  height: 24px;
+  color: #2D1B69;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-icons svg:hover {
+  color: #6B4DE6;
+}
